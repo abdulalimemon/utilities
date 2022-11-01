@@ -15,17 +15,17 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Running Genius Server')
+    res.send('Running Server')
 });
 
 
 app.listen(port, ()=> {
-    console.log('Listening to port 5000');
+    console.log('Listening to port', port);
 })
 
 ====================================
 4th : package.json > scripts
- "start": "node index.js",
+    "start": "node index.js",
     "start-dev": "nodemon index.js",
 
 ======================================
